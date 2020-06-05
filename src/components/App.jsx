@@ -13,7 +13,7 @@ function App() {
           <Note
             key={entryNote.key}
             title={entryNote.title}
-            content={notes.content}
+            content={entryNote.content}
           />
         );
       })}
