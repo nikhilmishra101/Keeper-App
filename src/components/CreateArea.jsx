@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 function CreateArea(props) {
-
-  const [inputNote,setInputNote]
+  const [note, setNote] = useState({
+    title: "",
+    content: "",
+  });
   return (
     <div>
       <form>

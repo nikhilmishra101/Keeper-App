@@ -7,7 +7,9 @@ import CreateArea from "./CreateArea";
 function App(props) {
   const [notes, setNotes] = useState(" ");
 
-  function addNote(inputNote) {}
+  function addNote(inputNote) {
+    setNotes;
+  }
   return (
     <div>
       <Header />
