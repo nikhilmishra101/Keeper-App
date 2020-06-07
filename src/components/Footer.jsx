@@ -1,11 +1,12 @@
 import React from "react";
 
-function footer() {
+function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer>
-      <p>Created By MayaDev {new Date().getFullYear()} </p>
+      <p>Copyright ⓒ {year}</p>
     </footer>
   );
 }
 
-export default footer;
+export default Footer;
