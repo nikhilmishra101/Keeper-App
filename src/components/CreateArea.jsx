@@ -5,11 +5,33 @@ function CreateArea(props) {
     title: "",
     content: "",
   });
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+
+    setNote((prevNote) => {
+      return {
+        ...prevNote,
+        [name]: value,
+      };
+    });
+  }
   return (
     <div>
       <form>
-        <input name="title" placeholder="Title" />
-        <textarea name="content" placeholder="Take a note..." rows="3" />
+        <input
+          name="title"
+          onChange={handleChange}
+          placeholder="Title"
+          value={note.title}
+        />
+        <textarea
+          name="content"
+          onChange={handleChange}
+          placeholder="Take a note..."
+          rows="3"
+          value={note.content}
+        />
         <button>Add</button>
       </form>
     </div>
